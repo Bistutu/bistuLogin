@@ -2,7 +2,9 @@
 
 模拟登陆`北京信息科技大学教务网`的 API ，可应用于课程表信息查询、成绩查询等项目的开发。本项目基于[wisedu-unified-login-api](https://github.com/ZimoLoveShuang/wisedu-unified-login-api)项目二次开发，作者为 **ThinkStu** 。
 
-<img src="https://thinkstu-typora.oss-cn-hangzhou.aliyuncs.com/typora/202210021432362.png" alt="image-20221002143258268" style="zoom:50%;" />
+<img src="https://thinkstu-typora.oss-cn-hangzhou.aliyuncs.com/typora/202210021432362.png" alt="image-20221002143258268" style="width:40%;" />
+
+
 
 # 声明
 
