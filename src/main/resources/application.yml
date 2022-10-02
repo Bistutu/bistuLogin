@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: dev
+
+# 下面是自定义配置
+
+# 日志
+logging:
+  file:
+    name: bistu.log
+    max-history: 10
+    max-size: 2MB
+  pattern:
+    rolling-file-name: bistu.%d{yyyy-MM-dd}.%i.log
+
+# 北京信息科技大学教务网登陆页，同时也是登陆接口
+LOGIN_API: "http://wxjw.bistu.edu.cn/authserver/login?service=http://jwxt.bistu.edu.cn/jwapp/sys/emaphome/portal/index.do"
