@@ -2,12 +2,19 @@
 
 模拟登陆`北京信息科技大学教务网`的 API ，可应用于课程表信息查询、成绩查询等项目的开发。本项目基于[wisedu-unified-login-api](https://github.com/ZimoLoveShuang/wisedu-unified-login-api)项目二次开发，作者为 **ThinkStu** 。
 
+<img src="https://thinkstu-typora.oss-cn-hangzhou.aliyuncs.com/typora/202210021432362.png" alt="image-20221002143258268" style="zoom:50%;" />
+
 # 声明
 
 1. 如果你想要将此项目架设在服务器上，那么你首先需要配置服务器连接校园网，具体见我的另一篇博文：[服务器连接校园网](https://blog.csdn.net/qq_35760825/article/details/127134130?spm=1001.2014.3001.5501)
 2. **本项目仅供学习交流使用，如作他用所承受的任何直接、间接法律责任一概与作者无关**
 3. 如果此项目侵犯了您或者您公司的权益，请联系作者删除。
+# 部署
 
+1. 请先在服务器配置好`tessreact（验证码自动识别插件）`，**非常重要**，安装和配置可以参考[子墨的博文](https://blog.zimo.wiki/posts/c417f07b/)
+2. 在release中下载打包好的war包，或者jar包
+3. `war`包放入`tomcat`等容器中，jar包使用`java -jar wisedu-unified-login-api-v1.0.jar &`命令执行
+5. [点此直达对新手小白更加友好的部署教程](https://blog.zimo.wiki/posts/6c809f81/)
 # api文档
 
 1. 部署 SpringBoot 程序后使用命令行访问：
@@ -45,10 +52,3 @@
 1. tess4j：用于ocr识别验证码
 2. fastjson：用于处理json数据
 4. jsoup：用于解析html代码
-
-# 部署
-
-1. 请先在服务器配置好`tessreact（自动识别验证码插件）`，**非常重要**，安装和配置可以参考[子墨的博文](https://blog.zimo.wiki/posts/c417f07b/)
-2. 在release中下载打包好的war包，或者jar包
-3. `war`包放入`tomcat`等容器中，jar包使用`java -jar wisedu-unified-login-api-v1.0.jar &`命令执行
-5. [点此直达对新手小白更加友好的部署教程](https://blog.zimo.wiki/posts/6c809f81/)
